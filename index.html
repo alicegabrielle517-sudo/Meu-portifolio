@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Alice Gabrielle</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #222;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h2 {
+            color: #d6a4ff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #d6a4ff;
+        }
+
+        section {
+            padding: 60px 8%;
+        }
+
+        .inicio {
+            background-color: #e9d8ff;
+            text-align: center;
+            padding: 100px 8%;
+        }
+
+        .inicio h1 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .inicio span {
+            color: #7b35ad;
+        }
+
+        .botao {
+            display: inline-block;
+            background-color: #7b35ad;
+            color: white;
+            padding: 12px 25px;
+            margin-top: 20px;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #7b35ad;
+        }
+
+        .habilidades {
+            background-color: white;
+        }
+
+        .lista-habilidades {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .habilidade {
+            background-color: #e9d8ff;
+            padding: 15px 25px;
+            border-radius: 8px;
+        }
+
+        .projetos {
+            background-color: #f5f5f5;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #00000015;
+        }
+
+        .card h3 {
+            color: #7b35ad;
+            margin-bottom: 10px;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 15px;
+            color: #7b35ad;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .detalhe-projeto {
+            background-color: white;
+            margin: 25px 8%;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .contato {
+            background-color: #e9d8ff;
+            text-align: center;
+        }
+
+        .contato a {
+            color: #7b35ad;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+
+            .inicio h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Meu Portfólio</h2>
+
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section class="inicio">
+        <h1>Olá, eu sou <span>Alice Gabrielle</span>!</h1>
+        <p>Estudante de Desenvolvimento de Sistemas e interessada em tecnologia e criação de sites.</p>
+        <a href="#projetos" class="botao">Conheça meus projetos</a>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre mim</h2>
+        <p>
+            Meu nome é Alice Gabrielle Alves Santos. Sou estudante de
+            Desenvolvimento de Sistemas e estou aprendendo sobre
+            programação, criação de páginas web e desenvolvimento de sites.
+            Este portfólio apresenta alguns dos meus projetos e conhecimentos.
+        </p>
+    </section>
+
+    <section class="habilidades">
+        <h2>Minhas habilidades</h2>
+
+        <div class="lista-habilidades">
+            <div class="habilidade">HTML</div>
+            <div class="habilidade">CSS</div>
+            <div class="habilidade">Criatividade</div>
+            <div class="habilidade">Aprendizagem</div>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2>Meus projetos</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Landing Page</h3>
+                <p>Página de apresentação de um aplicativo fictício chamado Glow App.</p>
+                <a href="#landing-page">Ver projeto</a>
+            </div>
+
+            <div class="card">
+                <h3>Blog Técnico</h3>
+                <p>Um blog com conteúdos e informações sobre tecnologia e programação.</p>
+                <a href="#blog">Ver projeto</a>
+            </div>
+
+            <div class="card">
+                <h3>Página de Jogo</h3>
+                <p>Uma página temática com informações sobre o mundo dos jogos.</p>
+                <a href="#jogo">Ver projeto</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="landing-page" class="detalhe-projeto">
+        <h2>Projeto 1 — Glow App</h2>
+        <h3>Conheça o Glow App!</h3>
+        <p>
+            O Glow App é um aplicativo fictício criado para demonstrar
+            uma landing page. Sua proposta é ajudar as pessoas a organizar
+            suas rotinas e acompanhar seus objetivos.
+        </p>
+        <p>
+            A página apresenta o aplicativo, seus benefícios e uma
+            chamada para conhecer melhor a proposta.
+        </p>
+        <a href="#projetos">Voltar aos projetos</a>
+    </section>
+
+    <section id="blog" class="detalhe-projeto">
+        <h2>Projeto 2 — Tech Blog</h2>
+        <h3>Blog de Tecnologia</h3>
+        <p>
+            Este projeto apresenta um blog com conteúdos relacionados
+            à tecnologia e ao desenvolvimento de sistemas.
+        </p>
+
+        <h3>O que é HTML?</h3>
+        <p>
+            HTML é uma linguagem utilizada para estruturar o conteúdo
+            de páginas da internet.
+        </p>
+
+        <h3>O que é CSS?</h3>
+        <p>
+            CSS é utilizado para definir a aparência das páginas,
+            como cores, fontes, tamanhos e organização dos elementos.
+        </p>
+
+        <h3>Por que aprender programação?</h3>
+        <p>
+            Aprender programação ajuda a desenvolver o raciocínio lógico
+            e permite criar soluções utilizando a tecnologia.
+        </p>
+
+        <a href="#projetos">Voltar aos projetos</a>
+    </section>
+
+    <section id="jogo" class="detalhe-projeto">
+        <h2>Projeto 3 — Game World</h2>
+        <h3>Bem-vindo ao Game World!</h3>
+        <p>
+            Esta página foi criada para apresentar o universo dos jogos.
+            Os jogos eletrônicos oferecem entretenimento, desafios
+            e experiências para diferentes públicos.
+        </p>
+
+        <h3>O mundo dos games</h3>
+        <p>
+            Existem diversos gêneros de jogos, como aventura, ação,
+            estratégia, esportes e quebra-cabeças.
+        </p>
+
+        <h3>Por que os jogos são interessantes?</h3>
+        <p>
+            Além de divertir, alguns jogos estimulam a criatividade,
+            o raciocínio lógico e a resolução de problemas.
+        </p>
+
+        <a href="#projetos">Voltar aos projetos</a>
+    </section>
+
+    <section id="contato" class="contato">
+        <h2>Entre em contato</h2>
+        <p>Você pode entrar em contato comigo pelo e-mail:</p>
+        <p>
+            <a href="mailto:alicegabrielle517@gmail.com">
+                alicegabrielle517@gmail.com
+            </a>
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 Alice Gabrielle Alves Santos. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

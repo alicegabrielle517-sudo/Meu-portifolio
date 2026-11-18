@@ -1,0 +1,132 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f4f8;
+    color: #333;
+}
+
+header {
+    background-color: #56345f;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #e6c6ed;
+}
+
+section {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.inicio {
+    background: linear-gradient(135deg, #8e5b9c, #d6a8df);
+    color: white;
+    min-height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.inicio p {
+    margin-bottom: 25px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: white;
+    color: #56345f;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: #eee0f1;
+}
+
+section h2 {
+    color: #70477a;
+    margin-bottom: 25px;
+}
+
+section p {
+    line-height: 1.7;
+}
+
+.habilidades,
+.projetos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.habilidades p,
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    width: 250px;
+}
+
+.card h3 {
+    color: #70477a;
+    margin-bottom: 12px;
+}
+
+#contato a {
+    color: #70477a;
+}
+
+footer {
+    background-color: #56345f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .inicio h2 {
+        font-size: 27px;
+    }
+
+    section {
+        padding: 40px 6%;
+    }
+}
